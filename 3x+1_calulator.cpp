@@ -2,10 +2,6 @@
 #include <windows.h>
 using namespace std;
 
-void loopindc(){
-    printf("Interger has fallen into 1,2,4 loop");
-}
-
 void odd_finder (int n){
     if(n % 2 == 0){
         n = n/2;
