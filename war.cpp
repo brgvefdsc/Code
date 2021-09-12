@@ -1,3 +1,5 @@
+//WORK IN PROGRESS | DEVELOPEMENT STARTED ON FRIDAY, SEPTEMBER 10 2021 | DATE: 9/12/21 | VERSION: 0.03BETA 
+
 /* How to play war: split the 52 card deck each player places a card down who evers cards has the most value is takes both, play till
 one player has taken the whole deck */ 
 #include <iostream>
