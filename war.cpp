@@ -1,6 +1,3 @@
-// WORK IN PROGRESS DEVELOPEMENT ON THIS BEGAN ON FRIDAY, SPETMENBER 10TH 2021
-
-
 /* How to play war: split the 52 card deck each player places a card down who evers cards has the most value is takes both, play till
 one player has taken the whole deck */ 
 #include <iostream>
@@ -8,20 +5,23 @@ one player has taken the whole deck */
 using namespace std;
 
 void cardscambler(){
-    int player_one_deck[26] = {};
+    int scambled_deck[52] = {};
     
-    for(int i = 0; i != 26; i++){
-        int player_one_card = rand() %52;
+    for(int i = 0; i != 52; i++){
+        int scarmbled_card = rand() %52;
         
-        for(int b = 0; b < 26; b++){
+//Looks to see if the random number genorated is already in list
+        for(int b = 0; b < 52; b++){
             
-            if(player_one_card == player_one_deck[b]){
-                cout << "\n \n Int " << player_one_card <<" appears twice in player1 deck" << endl;
+            if(scarmbled_card == scambled_deck[b]){
+                while(scarmbled_card == scambled_deck[b]){
+                    scarmbled_card = rand() %52;
+                }
             }
 
         }
-        player_one_deck[i] = player_one_card;
-        cout << "player ones " << i + 1 << " Card is " <<player_one_deck[i] << endl;
+        scambled_deck[i] = scarmbled_card;
+        cout << "Scambled Deck's " << i + 1 << " Card is " << scambled_deck[i] << endl;
     }
 }
 int main(){
@@ -48,6 +48,3 @@ int main(){
 */   
     cardscambler();
 }
-
-//Current Version: 0.02beta
-//DATE: 9/12/21
