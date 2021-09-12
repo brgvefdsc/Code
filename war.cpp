@@ -1,3 +1,6 @@
+// WORK IN PROGRESS DEVELOPEMENT ON THIS BEGAN ON FRIDAY, SPETMENBER 10TH 2021
+
+
 /* How to play war: split the 52 card deck each player places a card down who evers cards has the most value is takes both, play till
 one player has taken the whole deck */ 
 #include <iostream>
@@ -45,3 +48,6 @@ int main(){
 */   
     cardscambler();
 }
+
+//Current Version: 0.02beta
+//DATE: 9/12/21
