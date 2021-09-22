@@ -1,13 +1,13 @@
-//WORK IN PROGRESS | DEVELOPEMENT STARTED ON FRIDAY, SEPTEMBER 10 2021 | DATE: 9/12/21 | VERSION: 0.03BETA 
-
-/* How to play war: split the 52 card deck each player places a card down who evers cards has the most value is takes both, play till
-one player has taken the whole deck */ 
-#include <iostream>
 #include <stdio.h>
+#include <iostream>
+#include <ctime>
+
 using namespace std;
 
 void cardscambler(){
-    int scambled_deck[52] = {};
+    int scambled_deck[52] = { };
+    int play_one_deck[26] = {};
+    int play_two_deck[26] = {};
     
     for(int i = 0; i != 52; i++){
         int scarmbled_card = rand() %52;
@@ -22,12 +22,37 @@ void cardscambler(){
             }
 
         }
+        cout << scarmbled_card << endl;
         scambled_deck[i] = scarmbled_card;
+
         cout << "Scambled Deck's " << i + 1 << " Card is " << scambled_deck[i] << endl;
     }
+
+    for(int i = 0; i < 52; i++){
+        if(i < 26){
+            
+            play_one_deck[i] = scambled_deck[i];
+            cout << "\nPlayer 1's cards are " << play_one_deck[i] << endl;
+
+            if(i == 26){
+                cout << "\n\n\n";
+            }
+        }
+
+        if(i > 26){
+            play_two_deck[i] = scambled_deck[i];
+            cout<< "\nPlayer 2's cards are " << play_two_deck[i] << endl;
+
+        }
+    }
+    
+
 }
 int main(){
-    const string deck[] {
+    
+    srand ( time(NULL) );
+
+    const string deck[] = {
     "clubs_ace", "diamonds_ace", "hearts_ace", "spades_ace",
     "clubs_two", "diamonds_two", "hearts_two", "spades_two",
     "clubs_three","diamonds_three", "hearts_three", "spades_three",
