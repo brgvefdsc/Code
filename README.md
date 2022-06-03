@@ -12,3 +12,6 @@ for python programs in windows type python into command line or the microsoft st
 For C/C++ code I'll post pre-compiled but if you wanna compile it from source do it, I'm not gonna bother to explain how to set up a C/C++ compiler as I could bearly do it myself maybe check youtube that's what I did.
 
 I'll try and port as much code as I can from C/C++ to Python or Python to C/C++
+
+
+https://css-tricks.com/snippets/javascript/javascript-keycodes/
